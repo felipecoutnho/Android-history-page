@@ -2,42 +2,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 @font-face {
-    font-family: 'IDroid';
+    font-family:fontes/'IDroid';
     src: url('IDroid.otf') format('opentype'); 
 }
-
-/*--cor0: #ebe5c5;
+:root{
+    
+    --white:#fff;
+    --cor0: #ebe5c5;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
     --cor4: #1a5c37;
-    --cor5: #063d1e;*/
+    --cor5: #063d1e;
+
+    --fonteBebas:'Bebas Neue', cursive;
+    --fonteIdroid:'IDroid', sans-serif;
+    --fonteArial: Arial, Helvetica, sans-serif;
+}
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: normal;
-    font-weight:lighter;
-    
-  
+ 
 }
 
 body{
-    background-color: #ebe5c5;
+    background-color:var(--cor0);
+    
+    
     
 }
-.cabecalho{
-    background: linear-gradient(to bottom, rgb(82, 206, 119), rgb(80, 196, 80), rgb(4, 77, 8));
-    
-    
-   
+header{
+   min-height: 190px;
+   background-color: var(--cor4);
+   text-align: center;  
 }
 
-p{
-    font-family: 'Roboto Condensed', sans-serif;
+header h1{
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 0.45px;
+    color: var(--white);
+    font-family: var(--fonteBebas);
+    text-align: center;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.505);
+    
+}
+
+header p{
+    font-size: 1.2rem;
+    color: var(--white);
+    margin: auto;
+    padding-bottom: 20px;
+    padding:0px 10px 0px 10px;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.505);
+    font-family: var(--fonteArial);
+    max-width: 600px;
 
 }
 
