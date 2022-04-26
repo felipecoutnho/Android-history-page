@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 @font-face {
-    font-family:fontes/'IDroid';
-    src: url('IDroid.otf') format('opentype'); 
+    font-family:'IDroid';
+    src: url(fontes/IDroid.otf) format('opentype'); 
+    font-weight: normal;
 }
 :root{
     
@@ -25,6 +26,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--fonteArial);
  
 }
 
@@ -35,303 +37,185 @@ body{
     
 }
 header{
-   min-height: 190px;
-   background-color: var(--cor4);
-   text-align: center;  
+   min-height: 238px;
+   background: linear-gradient(to bottom, var(--cor3), var(--cor5));
+   text-align: center; 
 }
 
 header h1{
-    padding-top: 25px;
+    padding-top: 40px;
     margin-bottom: 20px;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: normal;
     letter-spacing: 0.45px;
     color: var(--white);
     font-family: var(--fonteBebas);
     text-align: center;
-    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.505);
-    
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.505); 
 }
 
 header p{
-    font-size: 1.2rem;
+    font-size:1.2em;
     color: var(--white);
     margin: auto;
-    padding-bottom: 20px;
     padding:0px 10px 0px 10px;
     text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.505);
     font-family: var(--fonteArial);
-    max-width: 600px;
+    max-width: 620px;
 
 }
 
-.title-principal{
-    margin: 22px 0 0 0;
-    display:block;
-    font-size: 44px;
-    text-align: center;
-    color: #fff;
-    font-weight: 200;
-    font-family: 'Bebas Neue', cursive;
-    text-shadow:2px 3px 3px black;
+nav{
+    padding: 10px;
+    background-color: var(--cor5);
+    box-shadow:0px 4px 2px rgba(0, 0, 0, 0.496);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 10px;
+    transition: all 300ms ease;
+}
+
+nav a:hover{
+    border-radius: 4px;
+    color: var(--cor5);
+    background: var(--cor3);
+}
+
+
+
+main{
+    background-color: var(--white);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.526);
+    border-radius: 0px 0px 10px 10px;
 
 }
  
-.cabecalho p{
-    font-family: Arial, sans-serif;
-    font-size: 23px;
-    color: white;
-    max-width: 780px;
-    padding-top: 44px;
-    padding-left: 44px;
-    margin:  0 auto;
-    padding-bottom: 50px;
-    text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+main h1{
+    font-family: var(--fonteIdroid);
+    color: var(--cor5);
+    font-weight: normal;
+    padding-bottom: 22px;
 }
 
-.menu a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.904);
-    margin: 5px;
-    font-size: 23px;
-    font-weight: 500;
-    font-family: 'Roboto Condensed', sans-serif;
-    
+main h2{
+    font-family: var(--fonteIdroid);
+    font-weight: normal;
+    font-size: 1.3em;
+    color: var(--cor4);
+    background: linear-gradient(to right, var(--cor1), transparent);
+    margin-bottom: 22px;
 }
 
-.menu a:hover{
-    background: rgba(82, 172, 82, 0.959);
-    width: 150px;
-    height: 150px;
-    color:rgb(2, 58, 2);
-    font-weight: bold;
-    border-radius: 2px;
-}
-
-.container{
-    margin: 0 auto;
-    width: 77%;
-    height: 80%;
-    background-color:#fff;
-    box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.432);
-}
-
-.container h1{
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 23px 0 0 22px;
-    color:rgb(20, 133, 20);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.paragraph1{
-    font-size: 16px;
-    text-indent: 44px;
+main p {
     text-align: justify;
-    margin: 22px 17px 22px 22px;
-    font-weight:400;
-
+    text-indent: 30px;
+    line-height: 34px;
+    padding-bottom: 14px;
 }
 
 strong{
-    color: green;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--cor4);
     font-weight: 600;
 }
 
-.paragraph2{
-    font-size: 16px;
-    text-indent: 44px;
-    text-align: justify;
-    margin: 22px 17px 22px 22px;
-    font-weight:400;
-    padding-bottom: 25px;
+main a{
+    font-size: 1.2em;
+    background-color:var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    padding:  2px 5px;
+}
+
+main a::after{
+    content: '\00A0\1F517';
+    
 }
 
 
 
 img{
-    display: block;
-    width:75vw;
-    padding: 0px 22px 0 22px;
+    width: 100%;
 
 }
 
 .imgbugdroid{
-    width: 20vw;
+    max-width:350px;
     display: block;
     margin: 0 auto;
 
 }
-
-.subtitles{
-    padding: 23px 0 0 22px;
-    color:rgb(14, 107, 14);
-    position: relative;
-    border-radius: 2px;
-    font-family: 'IDroid';
-   
-    
-}
-
-.bg-color{
-    margin-left: 14px;
-    background-image: linear-gradient(to right, #83e1ad, transparent);
-    border-radius: 2px;
-    color: rgb(14, 107, 14);
-}
-
-.paragraph1 span{
-    
-    font-weight: bold;
-    color: green;
-    font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-
-
-.paragraph1 a {
-    background-color: #83e1ad;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 2px 6px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-radius: 1px;
-}
-.paragraph1 a::after{
-    content: '\00A0\1F517';
-    height: 1px;
-}
-
 
 
 .video{
-    margin:0 auto;
-    margin-top: -20px;
-    width: 77%;
-    height: 80%;
-    background-color:rgb(16, 61, 36);
-    box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.432);
-  
+   background-color: var(--cor5);
+   position: relative;
+   padding-bottom: 57%;
+   margin: 0px -20px 30px -20px;
+   
+
 }
 
 .video iframe{
-    display: block;
-    margin: 0 auto;
-    width: 75vw;
-    height: 75vh;
-    padding: 22px; 
+    position: absolute;
+    width:90%;
+    height:90%;
+    top: 5%;
+    left: 5%;
     
 }
+
 
 aside{
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 1px;
-    width: 76.3vw;
-    padding-top:22px;
-    padding-bottom: 22px;
-    border-radius: 0px 0px 12px 12px;
-    box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.432);
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 28%);
+    border-radius: 10px;
 }
 
-aside section{
-    width: 70vw;
-    background-color: rgba(171, 240, 171, 0.671);
-    margin: 0 auto;
-    padding:22px;
-    margin-right:4.2%;
-    color: rgb(20, 17, 17);
-    border-radius: 0px 0px 12px 12px;
-}
-
-aside section p{
-    font-size: 16px;
-    text-indent: 44px;
-    text-align: justify;
-    margin: 22px 17px 22px 22px;
-    font-weight:400;
-   
-
-}
-
-aside section p a{
-    color: green;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-
-aside section p a::after{
-   
-        content: '\00A0\1F517';
-        height: 1px;
-        
-
-
-}
-
-.h2aside{
-    padding: 12px;
-    margin: 0 auto;
-    height: 5vh;
-    width: 70vw;
-    background-color: green;
-    border-radius: 12px 12px 0px 0px;
+aside h3{
+    background-color: var(--cor4);
     color: #fff;
-    
+    padding: 10px;
+    margin: -10px -10px  0px  -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.h2aside h2{
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: -0.41px;
-    font-style: normal;
-    font-weight:500;
-}
-
-.links{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 54% 0 0;
-    padding: 12px;
-    
-}
-
-.links2{
-    position: relative;    
-    left: 40%;
-}
-
-li{
-    font-family: 'Roboto Condensed', sans-serif;
-    list-style: none;
-    text-decoration:  underline dotted;
-    font-weight: 900;
-}
-
-li::before{
-    color: black;
-    font-weight:bold;
-    padding: 5px;
-    content: "\2713";
-
-}
-
-.paragraph-end{
-    font-size: 16px;
-    text-indent: 44px;
+aside p{
+    margin:15px  0px;
     text-align: justify;
-    margin: 22px 17px 22px 22px;
-    font-weight:400;
-    margin-top: 22px;
-    
+    text-indent: 30px;
+}
+
+aside ul{
+    list-style: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns:2;
+}
+
+article p{
+    margin:15px  0px;
+    text-align: justify;
+    text-indent: 30px;
+
 }
 
 footer{
-    margin-top: 22px;
-    background-color: green;
-    color: #fff;
+    background-color: var(--cor5);
+    color: white;
     text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
+
+
+
