@@ -83,6 +83,14 @@ nav a:hover{
     border-radius: 4px;
     color: var(--cor5);
     background: var(--cor3);
+    
+}
+.falecnc:hover{
+    border-radius: 4px;
+    color: var(--cor5);
+    background: var(--cor3);
+    height: 12;
+    
 }
 
 
@@ -215,6 +223,19 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+}
+
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline 2px solid var(--cor2);
 }
 
 
